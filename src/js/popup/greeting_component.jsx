@@ -1,8 +1,7 @@
 import React from "react";
 import icon from "../../img/icon-128.png";
 import { hot } from "react-hot-loader";
-// const octokit = require("@octokit/rest")();
-import GithubApi from "@octokit/rest";
+import GithubApi from "@octokit/rest"
 
 const octokit = GithubApi();
 
