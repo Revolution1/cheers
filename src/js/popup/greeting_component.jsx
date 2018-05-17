@@ -2,9 +2,9 @@ import React from "react";
 import icon from "../../img/icon-128.png";
 import { hot } from "react-hot-loader";
 // const octokit = require("@octokit/rest")();
-import GithubApi from "@octokit/rest"
+import GithubApi from "@octokit/rest";
 
-const octokit = GithubApi()
+const octokit = GithubApi();
 
 class GreetingComponent extends React.Component {
   constructor(props) {
@@ -19,8 +19,8 @@ class GreetingComponent extends React.Component {
       username: 'revolution1'
     }).then(data => {
       console.log(data);
-      this.setState({repos: data.data.length })
-    })
+        this.setState({repos: data.data.length });
+    });
   }
 
   render() {
