@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "@octokit/rest": "^15.4.1",
+    "antd": "^3.5.2",
+    "node-sass": "^4.9.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "sass-loader": "^7.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",

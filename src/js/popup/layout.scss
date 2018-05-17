@@ -1,0 +1,19 @@
+.main-layout {
+    width: 300px;
+
+  & > .header {
+    margin-top: 20px;
+    // height: 200px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  & > .content {
+    height: 300px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  & > .footer {
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+  }
+}

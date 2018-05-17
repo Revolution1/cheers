@@ -8,7 +8,9 @@ var webpack = require("webpack"),
     WriteFilePlugin = require("write-file-webpack-plugin");
 
 // load the secrets
-var alias = {};
+var alias = {
+  '@' : path.join(__dirname, 'src')
+};
 
 var secretsPath = path.join(__dirname, ("secrets." + env.NODE_ENV + ".js"));
 
@@ -31,9 +33,9 @@ var options = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        loader: "style-loader!css-loader",
-        exclude: /node_modules/
+        test: /\.(scss|css)$/,
+        use:[ 'style-loader','css-loader','sass-loader'],
+        // exclude: /node_modules/
       },
       {
         test: new RegExp('\.(' + fileExtensions.join('|') + ')$'),
