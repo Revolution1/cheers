@@ -38,11 +38,6 @@ var options = {
         // exclude: /node_modules/
       },
       {
-        test: new RegExp('\.(' + fileExtensions.join('|') + ')$'),
-        loader: "file-loader?name=[name].[ext]",
-        exclude: /node_modules/
-      },
-      {
         test: /\.html$/,
         loader: "html-loader",
         exclude: /node_modules/
@@ -50,8 +45,17 @@ var options = {
       {
         test: /\.(js|jsx)$/,
         loader: "babel-loader",
+        options: {
+          cacheDirectory: true,
+          presets: ["es2015", "stage-2", "react"],
+        },
+        // exclude: /node_modules/
+      },
+      {
+        test: new RegExp('\.(' + fileExtensions.join('|') + ')$'),
+        loader: "file-loader?name=[name].[ext]",
         exclude: /node_modules/
-      }
+      },
     ]
   },
   resolve: {

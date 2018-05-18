@@ -528,7 +528,54 @@ const starredRepos = [
   }
 ];
 
+const scores = {
+  follower_score: {
+    all_follower: 30,
+    same_follower: 2,
+    score: 20
+  },
+  following_score: {
+    all_following: 5,
+    same_folloing: 0,
+    score: 0
+  },
+  language_score: {
+    language_per_me: {
+      "Emacs Lisp": 0.33,
+      Python: 0.67
+    },
+    language_per_user: {
+      null: 0.15,
+      C: 0.02,
+      CSS: 0.07,
+      Go: 0.37,
+      HTML: 0.07,
+      JavaScript: 0.13,
+      Python: 0.09,
+      Ruby: 0.04,
+      Shell: 0.04,
+      Smarty: 0.02
+    },
+    score: 0
+  },
+  location_score: {
+    company: null,
+    score: 90
+  },
+  org_score: {
+    same_org: [],
+    score: 30
+  },
+  star_score: {
+    all_star: 25,
+    same_star: 4,
+    score: 40
+  },
+  total_score: 30
+};
+
 module.exports = {
   user: userData,
-  starred: starredRepos
+  starred: starredRepos,
+  scores
 };

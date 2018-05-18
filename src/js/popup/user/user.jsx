@@ -11,23 +11,23 @@ const User = props => {
       </div>
       <div className="content">
         <div className="name">{user.name}</div>
-        <div className="login">{user.login}</div>
+        <div className="login">{props.login}</div>
         <div className="bio">{user.bio}</div>
         <div className="counts">
           <Row>
             <Col span={12}>
-              <div>Followers: {user.followers}</div>
+              <div>粉丝: {user.followers}</div>
             </Col>
             <Col span={12}>
-              <div>Following: {user.following}</div>
+              <div>关注: {user.following}</div>
             </Col>
           </Row>
           <Row>
             <Col span={12}>
-              <span>Repositories: {user.public_repos}</span>
+              <span>项目: {user.repo}</span>
             </Col>
             <Col span={12}>
-              <span>Stars: {props.starred.length}</span>
+              <span>收藏: {user.stars}</span>
             </Col>
           </Row>
         </div>
