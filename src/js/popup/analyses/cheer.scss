@@ -1,0 +1,47 @@
+.cheer {
+  padding-top: 20px;
+
+  .bar {
+    height: 60px;
+    background-color: rgb(235, 233, 233);
+    text-align: center;
+    .bar-text {
+      display: inline-block;
+      position: relative;
+      top: -52px;
+      right: -60px;
+      font-size: 1.5em;
+      color: #c5c2c2;
+      font-weight: lighter;
+    }
+    .bar-text.score{
+      color: gray;
+    }
+    .circle {
+      cursor: pointer;
+      position: relative;
+      left: 110px;
+      top: -3px;
+      width: 66px;
+      height: 66px;
+      z-index: 100;
+      border-radius: 50%;
+      background-color: rgb(154, 154, 207);
+      box-shadow: 1px 1px rgba(86, 86, 204, 0.76);
+
+      &:hover {
+        background-color: rgb(123, 159, 207);
+      }
+      &:active {
+        background-color: rgb(102, 149, 211);
+      }
+      img {
+        position: relative;
+        top: 10px;
+        left: 3px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

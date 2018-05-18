@@ -1,0 +1,30 @@
+.user {
+  .avatar {
+    border-radius: 4px;
+    text-align: center;
+    img {
+      height: 120px;
+    }
+  }
+  .content {
+    margin: 0 25px;
+    .name {
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .login {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      color: #666;
+    }
+    .bio {
+      margin-bottom: 12px;
+      overflow: hidden;
+      font-size: 14px;
+      color: #6a737d;
+    }
+  }
+}
